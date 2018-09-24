@@ -1,0 +1,11 @@
+
+#attrContainer{
+    display: flex;
+    position: absolute;
+    left:-5px;
+    bottom:0%;
+    width: auto;
+    opacity: .8;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius:5px;
+}
