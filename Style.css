@@ -55,12 +55,18 @@ footer{
 .socialMedia{
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
-    position: relative;
     margin: 3px;
     padding:3px;
     width: 20px;
-    height: 20px;
+    height:20px;
+}
+.socialMedia{
+    display:flex;
+    -webkit-flex-direction-: row;
+    -webkit-margin-: 3px;
+    -webkit-padding-:3px;
+    -webkit-width-: 20px;
+    -webkit-height-: 20px;
 }
 .socialMedia:hover{
     transform: rotate(360deg) scale(2);
@@ -84,3 +90,4 @@ footer{
 #attribute{
     font-size: 12px;
 }
+
