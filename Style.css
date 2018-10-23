@@ -24,20 +24,23 @@ h5,.socialTag{
     right:5px;
 }
 footer{
-    display:flex;
-    position:relative;
+    position: absolute;
+    right:0;
+    left:0;
     height: 50px;
+    width:auto;
     bottom:-100%;
     background-color: rgba(163, 160, 122, 0.418);
+    
     
 }
 #mainContainer{
     position: relative;
     display: flex;
-    width: 60%;
-    min-height: 90vh;
+    width: 80%;
+    height: 90vh;
     margin-top: 70px;
-    left:20%;
+    left:10%;
     margin-bottom: 20px;
     background-color:rgba(235, 234, 183, 0.664);
     border:30px,solid,rgb(0, 0, 0);
