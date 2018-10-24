@@ -2,9 +2,17 @@
 #attrContainer{
     display: flex;
     position: absolute;
-    left:-5px;
+    left:50px;
     bottom:0%;
-    width: auto;
     opacity: .8;
     border-radius:5px;
+}
+#socialContainer{
+    display: flex;
+    position:relative;
+    width:235px;
+    max-width:60%;
+    height:30px;
+    bottom:-10px; 
+    left:30%;
 }

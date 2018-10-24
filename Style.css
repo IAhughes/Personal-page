@@ -28,17 +28,17 @@ footer{
     right:0;
     left:0;
     height: 50px;
-    width:auto;
+    width:100%;
     bottom:-100%;
     background-color: rgba(163, 160, 122, 0.418);
     
     
 }
 #mainContainer{
-    position: relative;
+    position: absolute;
     display: flex;
     width: 80%;
-    height: 90vh;
+    height: 100vh;
     margin-top: 70px;
     left:10%;
     margin-bottom: 20px;
@@ -49,8 +49,8 @@ footer{
 #socialContainer{
     display: flex;
     position:relative;
-    width: auto;
-    max-width: inherit;
+    width:250px;
+    max-width:70%;
     height:30px;
     bottom:-10px; 
     left:45%;
