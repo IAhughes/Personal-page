@@ -6,7 +6,8 @@ html{
     max-width: 100vw;
     margin: 0px;
     padding: 0px;
-    background-image: url("Images/apartmentNight.jpg");
+    /*background-image: url("Images/apartmentNight.jpg");*/
+    background-color: beige;
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
@@ -104,12 +105,31 @@ footer{
     margin: 5px;
     margin-bottom:-5px;
    }
-#attribute{
+.attribute{
     font-size: 12px;
 }
+/*@keyframes headTransition{
+from{background-color:#308375;}
+to{background-color: red;}*/
+
+/*The header and its contents follow as the user scrolls*/
+
+header{
+z-index: 1;
+display: flexbox;
+position: sticky;
+top: 0px;
+background-color: #308375;
+min-height:50px;
+max-height:50px ;
+padding: 5px;
+
+}
 #menuBar{
-    display: flex;
-    position: relative;
-    background-color: rgba(44, 45, 68, 0.822);
-    min-height: 50px;
+
+}
+#navContent{
+display:grid;
+grid-template-rows: auto auto auto;
+max-height: inherit;
 }
