@@ -4,19 +4,103 @@ html{
     height: 100%;
     min-height: 100%;
     max-width: 100vw;
-    margin: 0px;
-    padding: 0px;
-    /*background-image: url("Images/apartmentNight.jpg");*/
     background-color: beige;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* background: url("Images/apartmentNight.jpg") no-repeat center/cover; */
     background-attachment: fixed;
 }
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    /* color: purple; */
 }
-h5,.socialTag{
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    /* border: 2px dashed red; */
+}
+
+/* Navbar */
+
+nav{
+    width: 100%;
+background: aquamarine;
+padding: 20px 0;
+}
+
+nav .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container a{
+    text-decoration: none;
+    margin: 0 5px;
+    /* display: inline-block; now padding wont work */
+    color: #111;
+}
+
+/* Main */
+
+main .aboutMe{
+    
+    /*background-color: rgba(229, 236, 126, 0.562);*/
+    border-radius: 5px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+main .aboutMe h2{
+    margin-bottom:-10px;
+    background-color: aquamarine;
+    box-shadow:-5px 5px 8px #308375;
+    border:2px solid black;
+    border-radius: 5px;
+    max-width: 430px;
+    margin: 0 auto;
+   }
+main .projects{
+    
+    /*background-color: rgba(233, 230, 230, 0.993);*/
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+main .projects h2{
+    margin-bottom:-10px;
+    background-color: aquamarine;
+    box-shadow:-5px 5px 8px #308375;
+    border:2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    
+}
+   /* Footer */
+
+   footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(163, 160, 122, 0.418);
+    padding: 14px 0;
+    }
+
+footer .container{
+    display: flex;
+    justify-content: center;
+}
+
+footer .socialContainer{
+    display: flex;
+}
+
+footer .socialContainer .socialTag{
     display: flex;
     position: relative;
     margin: 0px;
@@ -24,54 +108,8 @@ h5,.socialTag{
     bottom:-6px;
     right:5px;
 }
-footer{
-    position: absolute;
-    right:0;
-    left:0;
-    height: 50px;
-    width:100%;
-    bottom:-100%;
-    background-color: rgba(163, 160, 122, 0.418);
-    
-}
-#mainContainer{
-    position: relative;
-    display: flex;
-    width: 80%;
-    height: 100vh;
-    margin-top: 70px;
-    left:10%;
-    margin-bottom: 20px;
-    background-color:rgba(235, 234, 183, 0.664);
-    border:30px,solid,rgb(0, 0, 0);
-    border-radius: 3px;
-}
-#socialContainer{
-    display: flex;
-    position:relative;
-    width:250px;
-    max-width:70%;
-    height:30px;
-    bottom:-10px; 
-    left:45%;
-}
-.socialMedia{
-    transform: rotate(0deg) scale(1) ;
-    transition-duration: 1s;
-    display: flex;
-    flex-direction: row;
-    margin: 3px;
-    padding:3px;
-    width: 23px;
-    height:23px;
-}
-.socialMedia:hover{
-    transform: rotate(360deg) scale(1.5);
-    transition-duration: 1s;
-    background-color: rgba(128, 123, 199, 0.356);
-    border-radius: 500px;
-}
-#attrContainer{
+
+footer .container #attrContainer{
     display: inline-flex;
     position: absolute;
     left:86%;
@@ -79,57 +117,19 @@ footer{
     width: auto;
     opacity: 1;
 }
-#aboutMeContainer{
-    display: flex;
-    position: relative;
-    width:30%;
-    padding:10px;
-    padding-bottom:10px;
-}
-#aboutMe{
-    position: absolute;
-    align-content: center;
-    
-    border:1px solid black;
-    background-color: rgba(229, 236, 126, 0.562);
-    border-radius: 5px;
-    text-align: center;
 
+footer .socialContainer a{
+display: flex;
+flex-direction: row;
+padding: 3px;
 }
-#aboutMe h2{
-    margin-bottom:-10px;
-    background-color: aquamarine;
-    box-shadow:-5px 5px 8px #308375;
-    border:2px solid black;
-    border-radius: 5px;
-    margin: 5px;
-    margin-bottom:-5px;
-   }
-.attribute{
-    font-size: 12px;
+footer .socialContainer a:hover{
+    transform: rotate(360deg) scale(1.2);
+    transition-duration: .5s;
+    background-color: rgba(128, 123, 199, 0.356);
+    border-radius: 500px;
+    display: flex;
+    flex-direction: row;
 }
-/*@keyframes headTransition{
-from{background-color:#308375;}
-to{background-color: red;}*/
 
 /*The header and its contents follow as the user scrolls*/
-
-header{
-z-index: 1;
-display: flexbox;
-position: sticky;
-top: 0px;
-background-color: #308375;
-min-height:50px;
-max-height:50px ;
-padding: 5px;
-
-}
-#menuBar{
-
-}
-#navContent{
-display:grid;
-grid-template-rows: auto auto auto;
-max-height: inherit;
-}
